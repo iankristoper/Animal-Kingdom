@@ -34,7 +34,7 @@ public abstract class Animal
     }
     
     //getters
-    public String habitat()
+    public String getHabitat()
     {
         return habitat;
     }
