@@ -8,22 +8,23 @@ package com.ian.animal_kingdom;
 public class Reptile extends Animal
 {
     //private data
-    private boolean canFly;
+    private boolean isColdBlooded;
     
     //using constructor
-    public Reptile(String name, int age, String habitat, boolean canFly)
+    public Reptile(String name, int age, String habitat, boolean isColdBlooded)
     {
         super(name, age, habitat);
-        this.canFly = canFly;
+        this.isColdBlooded = isColdBlooded;
     }
     
-    public boolean getFly()
+    //getters
+    public boolean getBloodStatus()
     {
-        return canFly;
+        return isColdBlooded;
     }
             
     
-    
+    //using the abstract method came from the super class 
     @Override
     public void makeSound()
     {
